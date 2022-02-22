@@ -83,7 +83,7 @@
       </div>
       <van-dialog v-model="show" title="上传图片" show-cancel-button >
         
-        <div class="dialog"><van-uploader v-model="fileList" :after-read="afterRead" /></div>
+        <div class="dialog"><van-uploader  :after-read="afterRead" /></div>
       </van-dialog>
     </div>
   </div>
@@ -126,7 +126,7 @@ export default {
     },
     upload(flag) {
       console.log(flag)
-      if (flag == 1) {
+      if (flag == 0) {
         this.show = true;
       } else {
         return false;

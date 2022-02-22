@@ -119,6 +119,11 @@ export default {
               duration: 950,
             });
             this.$router.push("/main");
+         }else{
+            Toast({
+              message: res.msg,
+              duration: 950,
+            });
          }
         }
       );
